@@ -44,8 +44,8 @@
 
     <ImageButton
         android:id="@+id/addImgNavHeader"
-        android:layout_width="30"
-        android:layout_height="30"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="16dp"
@@ -60,7 +60,7 @@
     <Button
         android:id="@+id/loginBtnNavHeader"
         android:layout_width="wrap_content"
-        android:layout_height="32"
+        android:layout_height="32dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
