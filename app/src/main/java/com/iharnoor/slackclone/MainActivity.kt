@@ -1,5 +1,6 @@
 package com.iharnoor.slackclone
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -21,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
@@ -39,6 +39,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loginBtnNavClicked(view: View) {
-        Toast.makeText(this, "loginBtnNavClicked", Toast.LENGTH_SHORT).show()
+        val loginIntent = Intent(this, LoginActivity::class.java)
+        startActivity(loginIntent)
+        Toast.makeText(this, "loginBtnNavClicked Successful", Toast.LENGTH_SHORT).show()
+    }
+
+    fun addBtnClicked(view: View) {
+        Toast.makeText(this, "addBtnClicked Successful", Toast.LENGTH_SHORT).show()
+    }
+
+    fun sendMessageBtnClicked(view: View) {
+        Toast.makeText(this, "sendMessageBtnClicked Successful", Toast.LENGTH_SHORT).show()
     }
 }
