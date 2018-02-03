@@ -1,9 +1,11 @@
-package com.iharnoor.slackclone
+package com.iharnoor.slackclone.Controller
 
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.iharnoor.slackclone.R
+import com.iharnoor.slackclone.Services.AuthService
 import kotlinx.android.synthetic.main.activity_signup.*
 import java.util.*
 
@@ -42,6 +44,10 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     fun createUserClicked(view: View) {
+        AuthService.registerUser(this, "h@h1.com", "123456") { complete ->
+            if (complete) {
 
+            }
+        }
     }
 }
